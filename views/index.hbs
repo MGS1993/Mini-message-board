@@ -1,7 +1,16 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<ul>
-  {{#each messages}}
-  <li>{{user}} {{text}} {{added}}</li>
-  {{/each}}
-</ul>
+<div id="mainContent">
+  <h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>
+  <div class="messageBoard">
+    {{#each messages}}
+    <div class="messageWrapper">
+      <div class="user">{{user}}</div> 
+    <div class="message">
+      
+      <div class="text">{{text}}</div>
+      <div class="added">{{added}}</div>
+      </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
