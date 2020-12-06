@@ -28,10 +28,33 @@ a {
   margin: 25px;
   border: 1px solid #ccc;
   padding: 10px;
-  
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
 }
+  .user {
+    font-size: 12px;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+  }
+    .text {
+      padding: 10px;
+    }
+    .added {
+      align-self: flex-end;
+      font-size: 12px;
+    }
 
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  
+}
 .messageWrapper:nth-child(odd) {
   align-self: start;
   background-color: aliceblue;
